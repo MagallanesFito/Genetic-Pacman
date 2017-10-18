@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Genetic Pacman</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+      <script src="libraries/p5.dom.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript">
+            var div = document.getElementById("textDiv");  
+            div.textContent = pacman.getPoints().toString();  
+      </script>
+    <script src="cell.js" type="text/javascript"></script>
+    <script src="ghost.js" type="text/javascript"></script>
+    <script src="pacman.js" type="text/javascript"></script>
+      
+    <style> body {padding: 20px; margin: 0;} canvas {vertical-align: top;} </style>
+  </head>
+  <body>
+      <div id="textDiv" style="font-size:32px; color:black;"></div>   
+  </body>
+</html>
